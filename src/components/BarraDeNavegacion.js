@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Nav = styled.nav`
+  width: 100%;
+  margin: 20px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -9,39 +11,45 @@ const Nav = styled.nav`
   
 `;
 
-const SearchContainer = styled.div`
-  width: 450px;
+const Title = styled.div`
+  width: 30%;
+  height: auto;
   display: flex;
+  justify-content: center;  
+`
+
+const SearchContainer = styled.div`
+  width: 30%;
+  display: flex;
+  justify-content: center;  
       `;
 
 const SearchInput = styled.input`
-  padding: 5px;
-  margin: 9px;
+  width: 200px;
+  padding: 4px;
   text-align: center;
   border-radius: 2px;
   border: 1px solid #ccc;
-  justify-content: flex-end;   
-  `;
+    `;
 
 const IconContainer = styled.div`
-  width: 400px;
-  height: 50px;
+  width: 30%;
   display: flex;
-  justify-content: flex-end;
-  ${'' /* align-items: center; */}
+  justify-content: center;
+  align-items: center;
   `;
-
 const Icon = styled.i`
   font-size: 20px;
-  padding: 10px 10px 0 10px;
+  padding: 0 10px;
   color: #808080;
-  align-self: flex-end;
+  align-items: center;
    
 `;
 
 const BarraDeNavegacion = () => {
   return (
     <Nav>
+      <Title><p>Stylagram</p></Title>
       <SearchContainer>
         <SearchInput type="search" name="" id="" placeholder="Search" />
       </SearchContainer>
