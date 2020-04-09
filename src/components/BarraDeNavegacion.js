@@ -16,7 +16,7 @@ const Title = styled.div`
   height: auto;
   display: flex;
   justify-content: center;  
-`
+`;
 
 const SearchContainer = styled.div`
   width: 30%;
